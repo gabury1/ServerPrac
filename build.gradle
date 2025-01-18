@@ -93,3 +93,7 @@ configurations {
 	}
 	querydsl.extendsFrom compileClasspath
 }
+
+clean {
+	delete file(generated)
+}
