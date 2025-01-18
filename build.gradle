@@ -79,13 +79,14 @@ querydsl {
 	jpa = true
 	querydslSourcesDir = generated
 }
+
 sourceSets {
 	main.java.srcDir generated
 }
 
-//compileQuerydsl{
-//	options.annotationProcessorPath = configurations.querydsl
-//}
+compileQuerydsl{
+	options.annotationProcessorPath = configurations.querydsl
+}
 
 configurations {
 	compileOnly {
