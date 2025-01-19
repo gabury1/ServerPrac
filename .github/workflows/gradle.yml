@@ -44,9 +44,9 @@ jobs:
           cd ./src/main/resources # resources 폴더로 이동
           touch ./env # env.properties 파일 생성
           echo "CICD 테스트를 시작합니다."
-          echo "DB_URL = ${{secrets.DB_URL}}" >> ./.env
-          echo "DB_USERNAME = ${{secrets.DB_USERNAME}}" >> ./.env
-          echo "DB_PASSWORD = ${{secrets.DB_PASSWORD}}" >> ./.env
+          echo 'DB_URL = "${{secrets.DB_URL}}"' >> ./.env
+          echo 'DB_USERNAME = "${{secrets.DB_USERNAME}}"' >> ./.env
+          echo 'DB_PASSWORD = "${{secrets.DB_PASSWORD}}"' >> ./.env
           cat ./.env
 
     - name: Build with Gradle Wrapper
