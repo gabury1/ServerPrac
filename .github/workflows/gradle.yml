@@ -42,9 +42,9 @@ jobs:
     - name : set YAML FILE(test)
       run: |
           echo "CICD 테스트를 시작합니다."
-          echo DB_URL = ${secrets.DB_URL}
-          echo DB_USERNAME = ${secrets.DB_USERNAME}
-          echo DB_PASSWORD = ${secrets.DB_PASSWORD}
+          echo DB_URL = ${{secrets.DB_URL}}
+          echo DB_USERNAME = ${{secrets.DB_USERNAME}}
+          echo DB_PASSWORD = ${{secrets.DB_PASSWORD}}
 
     - name: Build with Gradle Wrapper
       run: ./gradlew build
