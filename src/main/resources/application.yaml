@@ -1,11 +1,12 @@
-spring : 
-  application :
-    name : ServerPrac
+spring :
   config:
     import: optional:file:.env[.properties]
+  application :
+    name : ServerPrac
+
   
   datasource:
-    url: ${DB_URL}
+    url: ${DB_URL} # jdbc:mysql://serverprac.cj6koc6yqngh.ap-northeast-2.rds.amazonaws.com/serverprac
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver

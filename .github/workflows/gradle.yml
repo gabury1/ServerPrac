@@ -41,9 +41,9 @@ jobs:
 
     - name : set YAML FILE(test)
       run: |
-          cd ./src/main/resources # resources Æú´õ·Î ÀÌµ¿
-          touch ./env # env.properties ÆÄÀÏ »ý¼º
-          echo "CICD Å×½ºÆ®¸¦ ½ÃÀÛÇÕ´Ï´Ù."
+          cd ./ # resources ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½
+          touch ./env # env.properties ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+          echo "CICD í…ŒìŠ¤íŠ¸."
           echo 'DB_URL = ${{secrets.DB_URL}}' >> ./.env
           echo 'DB_USERNAME = ${{secrets.DB_USERNAME}}' >> ./.env
           echo 'DB_PASSWORD = ${{secrets.DB_PASSWORD}}' >> ./.env
