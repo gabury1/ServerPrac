@@ -70,7 +70,7 @@ jobs:
         username: ubuntu
         key: ${{ secrets.PRIVATE_KEY }}
         envs: GITHUB_SHA
-        script: |
+        script: | 
           sudo docker ps
           sudo docker pull ${{ secrets.DOCKER_USERNAME }}/server-prac
           sudo docker run -d -p 8080:8080 ${{ secrets.DOCKER_USERNAME }}/server-prac
