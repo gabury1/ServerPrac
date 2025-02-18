@@ -18,5 +18,5 @@ spring :
     database-platform: org.hibernate.dialect.MySQLDialect
 
   test:
-    testStr: ${test_string}
+    testStr: ${TEST_STRING}
 
