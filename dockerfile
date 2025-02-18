@@ -15,6 +15,8 @@ FROM bellsoft/liberica-openjdk-alpine:17
 
 WORKDIR /app
 
+COPY .env .env
+
 COPY --from=builder /app/build/libs/*.jar app.jar
 
 EXPOSE 8080
