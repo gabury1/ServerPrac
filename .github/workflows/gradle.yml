@@ -48,6 +48,7 @@ jobs:
           echo 'DB_PASSWORD = ${{secrets.DB_PASSWORD}}' >> ./.env
           echo 'DB_PASSWORD = ${{secrets.TEST_STRING}}' >> ./.env
           cat ./.env
+          ls
 
     - name: Build with Gradle Wrapper
       run: ./gradlew build test -i
